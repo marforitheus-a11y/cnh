@@ -47,21 +47,19 @@ body {
 }
 
 .carousel {
+    overflow: hidden;
     width: 100%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
 }
 
 .carousel-track {
     display: flex;
-    width: 100%;
+    will-change: transform;
 }
 
 .carousel-track img {
     width: 100%;
     flex-shrink: 0;
-    scroll-snap-align: start;
     user-select: none;
     pointer-events: none;
 }
@@ -136,4 +134,5 @@ body {
     stroke-linejoin: round;
 
 }
+
 

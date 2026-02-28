@@ -16,6 +16,11 @@
 
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
 <body>
 
 <header class="header">
@@ -105,6 +110,7 @@
 </body>
 
 </html>
+
 
 
 

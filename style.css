@@ -46,25 +46,21 @@ body {
     padding: 16px;
 }
 
-/* CAROUSEL */
 .carousel {
     overflow: hidden;
-    border-radius: 12px;
-    background: #000;
+    width: 100%;
+    touch-action: pan-y;
 }
 
 .carousel-track {
     display: flex;
-    transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .carousel img {
     width: 100%;
     flex-shrink: 0;
-    user-select: none;
-    pointer-events: none;
 }
-
 /* DOTS */
 .dots {
     display: flex;
@@ -126,4 +122,5 @@ body {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
+
 }

@@ -30,3 +30,34 @@ dots.forEach((dot, index) => {
         });
     });
 });
+/* =========================
+   ATUALIZAR DATA E HORA
+========================= */
+function atualizarDataHoraAcesso() {
+    const spanData = document.getElementById('data-atualizacao');
+    
+    // Se o elemento não existir, interrompe a função
+    if (!spanData) return;
+
+    const agora = new Date();
+
+    // Formata o dia, mês e ano com 2 dígitos (ex: 03, 09)
+    const dia = String(agora.getDate()).padStart(2, '0');
+    const mes = String(agora.getMonth() + 1).padStart(2, '0'); // Mês começa em 0
+    const ano = agora.getFullYear();
+
+    // Formata a hora, minutos e segundos com 2 dígitos
+    const horas = String(agora.getHours()).padStart(2, '0');
+    const minutos = String(agora.getMinutes()).padStart(2, '0');
+    const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+    // Monta a string no formato desejado
+    const dataFormatada = `Atualizado em: ${dia}/${mes}/${ano} - ${horas}:${minutos}:${segundos}`;
+    
+    // Insere o texto no HTML
+    spanData.textContent = dataFormatada;
+}
+
+// Executa a função assim que o conteúdo da página for carregado
+document.addEventListener('DOMContentLoaded', atualizarDataHoraAcesso);
+

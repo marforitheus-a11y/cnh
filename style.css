@@ -140,17 +140,20 @@ body {
 /* AVISO VIO */
 .aviso-vio {
     text-align: center;
-    color: #0c2d6b; /* Mesmo azul do cabeçalho */
-    font-size: 15px;
+    color: #0c2d6b;
+    font-size: 14.5px; /* Tamanho ajustado para bater com o print */
+    font-family: 'Inter', sans-serif; /* Forçando a fonte exata */
     margin-bottom: 16px;
     font-weight: 400;
+    letter-spacing: 0.2px; /* Dá aquele respiro sutil entre as letras */
 }
 
 .aviso-vio a {
     color: #0c2d6b;
-    font-weight: 700; /* Deixa o "Vio" mais gordinho (negrito) */
-    text-decoration: underline; /* Adiciona o sublinhado */
+    font-weight: 600; /* Negrito na medida certa para o "Vio" */
+    text-decoration: underline;
 }
+
 
 
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -150,6 +151,7 @@ body {
     font-weight: 700; /* Deixa o "Vio" mais gordinho (negrito) */
     text-decoration: underline; /* Adiciona o sublinhado */
 }
+
 
 
 

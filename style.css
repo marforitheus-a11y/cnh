@@ -144,15 +144,16 @@ body {
     font-size: 14.5px; /* Tamanho ajustado para bater com o print */
     font-family: 'Inter', sans-serif; /* Forçando a fonte exata */
     margin-bottom: 16px;
-    font-weight: 400;
+    font-weight: 320;
     letter-spacing: 0.2px; /* Dá aquele respiro sutil entre as letras */
 }
 
 .aviso-vio a {
     color: #2c83ec;
-    font-weight: 600; /* Negrito na medida certa para o "Vio" */
+    font-weight: 500; /* Negrito na medida certa para o "Vio" */
     text-decoration: underline;
 }
+
 
 
 

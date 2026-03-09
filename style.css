@@ -24,12 +24,23 @@ body {
 }
 
 .back-btn {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.15); /* Cria o fundo circular transparente */
     border: none;
     color: #fff;
-    font-size: 22px;
+    width: 38px;          /* Largura do círculo */
+    height: 38px;         /* Altura do círculo */
+    border-radius: 50%;   /* Deixa redondo */
     margin-right: 12px;
     cursor: pointer;
+    display: flex;        /* Usado para centralizar o ícone */
+    align-items: center;  /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+    flex-shrink: 0;       /* Evita que o botão amasse em telas pequenas */
+    transition: background 0.2s; /* Efeito suave ao clicar */
+}
+
+.back-btn:active {
+    background: rgba(255, 255, 255, 0.25); /* Fica levemente mais claro ao clicar */
 }
 
 .header-text h1 {
@@ -153,6 +164,7 @@ body {
     font-weight: 430; /* Negrito na medida certa para o "Vio" */
     text-decoration: underline;
 }
+
 
 
 

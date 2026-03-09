@@ -136,6 +136,21 @@ body {
     stroke-linejoin: round;
 
 }
+/* AVISO VIO */
+.aviso-vio {
+    text-align: center;
+    color: #0c2d6b; /* Mesmo azul do cabeçalho */
+    font-size: 15px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.aviso-vio a {
+    color: #0c2d6b;
+    font-weight: 700; /* Deixa o "Vio" mais gordinho (negrito) */
+    text-decoration: underline; /* Adiciona o sublinhado */
+}
+
 
 
 

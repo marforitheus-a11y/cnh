@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Habilitação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0c2d6b">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Habilitação">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <button class="back-btn">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="header-text">
+            <h1>HABILITAÇÃO</h1>
+            <span id="data-atualizacao">Atualizado em: carregando...</span>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <div class="aviso-vio">
+        Verifique autenticidade do QR Code com o app <a href="#">Vio</a>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="images/image1.jpg" alt="">
+            <img src="images/image2.jpg" alt="">
+            <img src="images/image3.jpg" alt="">
+            <img src="images/image4.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="actions">
+
+        <button class="action-btn">
+    <span class="icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="5" width="20" height="14" rx="2" fill="#0c2d6b"/>
+            <circle cx="7.5" cy="10.5" r="2.5" fill="#fff"/>
+            <path d="M4 17C4 15.343 5.343 14 7.5 14C9.657 14 11 15.343 11 17V17.5H4V17Z" fill="#fff"/>
+            <rect x="13" y="10.5" width="6" height="1.5" rx="0.75" fill="#fff"/>
+            <rect x="13" y="14" width="6" height="1.5" rx="0.75" fill="#fff"/>
+        </svg>
+    </span>
+    Histórico de emissões da CNH
+</button>
+
+<button class="action-btn">
+    <span class="icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 3H6C4.895 3 4 3.895 4 5V19C4 20.105 4.895 21 6 21H14C15.105 21 16 20.105 16 19V16H9V14H16V9H12C11.448 9 11 8.552 11 8V3Z" fill="#0c2d6b"/>
+            <path d="M12.5 3V7.5C12.5 7.776 12.724 8 13 8H17.5L12.5 3Z" fill="#0c2d6b"/>
+            <path d="M15 11L21 15L15 19V11Z" fill="#0c2d6b"/>
+        </svg>
+    </span>
+    Exportar
+</button>
+
+        <button class="action-btn">
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm13-15h-4.5l-1-1h-5l-1 1H5v2h14V4z" fill="#0c2d6b"/>
+                </svg>
+            </span>
+            Remover
+        </button>
+
+        <button class="action-btn">
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M16 1H4C2.9 1 2 1.9 2 3v14h2V3h12V1zm3 4H8C6.9 5 6 5.9 6 7v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="#0c2d6b"/>
+                </svg>
+            </span>
+            Copiar QR Code
+        </button>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+

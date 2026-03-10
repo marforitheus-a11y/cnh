@@ -1,5 +1,5 @@
 // Nome do nosso cache (se você mudar o layout no futuro, mude para v2, v3...)
-const CACHE_NAME = 'meu-app-carrossel-v1';
+const CACHE_NAME = 'meu-app-carrossel-v2';
 
 // Lista de todos os arquivos que queremos salvar no celular do cliente
 const arquivosParaCache = [
